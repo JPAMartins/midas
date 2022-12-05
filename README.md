@@ -1,24 +1,26 @@
-# README
+# Midas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Documentation
 
-Things you may want to cover:
+The documentation is available in [/docs/midas.md](/docs/midas.md).
 
-* Ruby version
+## Installation
 
-* System dependencies
+In the terminal, run the following commands:
 
-* Configuration
+```bash
+git colone [REPOSITORY-URL]
+cd [REPOSITORY-DIRECTORY]
 
-* Database creation
+bundle install
+rails s
+```
 
-* Database initialization
+## Tests
 
-* How to run the test suite
+In the terminal, run the following commands:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
 
-* Deployment instructions
-
-* ...
+bundle exec rspec
+```
