@@ -1,0 +1,108 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - vendor/**/*
+    - log/**/*
+    - db/migrate/*
+    - db/schema.rb
+    - bin/*
+    - Rakefile
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - config/**/*
+    - scripts/**/*
+    - Gemfile
+    - spec/support/*
+  TargetRubyVersion: 3.0.1
+  TargetRailsVersion: 7.0.1
+
+Style/Documentation:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+RSpec/BeEq:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Exclude:
+    - spec/**/*
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ChangeByZero:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 100
+
+Metrics/ParameterLists:
+  Max: 10
+
+Metrics/MethodLength:
+  Max: 30
+  Exclude:
+    - spec/**/*
+
+Metrics/ClassLength:
+  Max: 150
+  Exclude:
+    - app/models/**/*
+
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - spec/**/*
+    - lib/tasks/*
+
+Metrics/ModuleLength:
+  Max: 150
+  Exclude:
+    - spec/docs/**/*
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Style/DateTime:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+  Exclude:
+    - spec/docs/**/*
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - spec/**/*
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 5
+
+Lint/Debugger:
+  Enabled: true
